@@ -50,6 +50,5 @@ public class RectangleCommand extends FigureCommand {
         handler.handleArguments(arguments);
         Rectangle rectangle = new Rectangle(sideA, sideB, diagonal, area);
         updateContext(rectangle);
-        rectangle.print();
     }
 }

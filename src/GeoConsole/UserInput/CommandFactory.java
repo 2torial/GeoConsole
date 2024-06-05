@@ -50,8 +50,6 @@ public final class CommandFactory {
         commandSuppliers.put("sort", SortCommand::new);
         commandSuppliers.put("help", HelpCommand::new);
         commandSuppliers.put("exit", ExitCommand::new);
-        commandSuppliers.put("add", AddCommand::new);
-        commandSuppliers.put("let", LetCommand::new);
         commandSuppliers.put("square", SquareCommand::new);
         commandSuppliers.put("equilateraltriangle", EquilateralTriangleCommand::new);
         commandSuppliers.put("rectangle", RectangleCommand::new);
@@ -62,6 +60,11 @@ public final class CommandFactory {
         commandSuppliers.put("triangle", TriangleCommand::new);
         commandSuppliers.put("righttriangle", RightTriangleCommand::new);
         commandSuppliers.put("double", DoubleFigureCommand::new);
+        commandSuppliers.put("isoscelestrapezoid", IsoscelesTrapezoidCommand::new);
+        commandSuppliers.put("save", SaveCommand::new);
+        commandSuppliers.put("remove", RemoveCommand::new);
+        commandSuppliers.put("ellipse", EllipseCommand::new);
+        commandSuppliers.put("language", LanguageCommand::new);
 
         commandSuppliers.forEach((key, supplier) -> commandPool.put(key, supplier.get()));
     }

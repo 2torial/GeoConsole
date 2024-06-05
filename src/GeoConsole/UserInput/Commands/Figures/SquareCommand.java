@@ -42,6 +42,5 @@ public class SquareCommand extends FigureCommand {
         handler.handleArguments(arguments);
         Square square = new Square(side, diagonal, area);
         updateContext(square);
-        square.print();
     }
 }
